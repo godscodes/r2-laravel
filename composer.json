@@ -1,0 +1,32 @@
+{
+    "name": "godscodes/r2-laravel",
+    "description": "A simple Laravel 5/6/7/8/9 service provider for including the Cloudflare R2 Storage for PHP",
+    "keywords": ["laravel", "laravel 5", "laravel 6", "laravel 7", "laravel 8", "laravel 9", "cloudflare", "r2", "torage", "s3"],
+    "type": "library",
+    "license": "Apache-2.0",
+    "require": {
+        "aws/aws-sdk-php-laravel": "~3.0"
+    },
+    "suggest": {
+        "laravel/framework": "To test the Laravel bindings",
+        "laravel/lumen-framework": "To test the Lumen bindings"
+    },
+    "authors": [
+        {
+            "name": "godscodes"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "godscodes\\R2Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "godscodes\\R2Laravel\\R2ServiceProvider"
+            ]
+        }
+    }
+}
